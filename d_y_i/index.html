@@ -1,0 +1,209 @@
+<!-- Pagina de Horus Mart -->
+<!--
+    Una pagina que vende productos varios
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorusMart - Main</title>
+    <!-- Icono -->
+    <link rel="icon" href="./assets/img/icon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    <div class = "horus-container">
+        <navbar class = "navbar">
+            <ul class = "navbar__list">
+                <!-- Logo -->
+                <li class = "navbar__item">
+                    <img class = "navbar__logo" src = "./assets/img/logo.png" alt = "logo">
+                </li>
+                <!-- Inicio -->
+                <li class = "navbar__item">
+                    <a class = "navbar__link" href = "#">Inicio</a>
+                </li>
+                <!-- Electronica -->
+                <li class = "navbar__item">
+                    <a class = "navbar__link" href = "#">Electronica</a>
+                </li>
+                <!-- Muebles -->
+                <li class = "navbar__item">
+                    <a class = "navbar__link" href = "#">Muebles</a>
+                </li>
+                <!-- Ropa -->
+                <li class = "navbar__item">
+                    <a class = "navbar__link" href = "#">Ropa</a>
+                </li>
+                <!-- Zapatos -->
+                <li class = "navbar__item">
+                    <a class = "navbar__link" href = "#">Zapatos</a>
+                </li>
+                <!-- Otros -->
+                <li class = "navbar__item">
+                    <a class = "navbar__link" href = "#">Otros</a>
+                </li>
+                <!-- Carrito Icono -->
+                <li class = "navbar__item">
+                    <div class = "navbar__cart">
+                        <img class = "navbar__cart-img" src = "./assets/img/cart.png" alt = "cart">
+                        <p class = "navbar__cart-quantity">0</p>
+                    </div>
+
+                </li>
+                <!-- Cuenta Icono -->
+                <li class = "navbar__item">
+                    <div class = "navbar__account">
+                        <img class = "navbar__account-img" src = "./assets/img/account.jpg" alt = "account">
+                        <p class = "navbar__account-name">Juan</p>
+                    </div>
+                </li>
+                <!-- Buscador -->
+                <li class = "navbar__item">
+                    <div class = "navbar__search">
+                        <input class = "navbar__search-input" type = "text" placeholder = "Buscar...">
+                        <!-- Icono de Buscador -->
+                        <img class = "navbar__search-img" src = "./assets/img/search.png" alt = "search">
+                    </div>
+                </li>
+            </ul>
+        </navbar>
+        <!-- Imagen de fondo Carousel (Navbar Transparente) -->
+        <div class = "horus-container__carousel">
+            <!-- Tres imagenes -->
+            <img class = "horus-container__carousel-img" src = "https://via.placeholder.com/3000x1000" alt = "carousel1">
+            <img class = "horus-container__carousel-img" src = "https://via.placeholder.com/3000x1000" alt = "carousel2">
+            <img class = "horus-container__carousel-img" src = "https://via.placeholder.com/3000x1000" alt = "carousel3">
+
+            <!-- Botones de Carousel -->
+            <button class = "horus-container__carousel-btn horus-container__carousel-btn--left" onclick = "plusDivs(-1)">&#10094;</button>
+            <button class = "horus-container__carousel-btn horus-container__carousel-btn--right" onclick = "plusDivs(1)">&#10095;</button>
+
+            <!-- Indicadores de Carousel -->
+
+            <div class = "horus-container__carousel-indicator">
+                <span class = "horus-container__carousel-indicator-dot" onclick = "currentDiv(1)"></span>
+                <span class = "horus-container__carousel-indicator-dot" onclick = "currentDiv(2)"></span>
+                <span class = "horus-container__carousel-indicator-dot" onclick = "currentDiv(3)"></span>
+            
+
+            </div>
+
+            <!-- Texto de Carousel -->
+            <div class = "horus-container__carousel-text">
+                <h1 class = "horus-container__carousel-text-title">HorusMart</h1>
+                <p class = "horus-container__carousel-text-description">La mejor tienda de productos varios</p>
+            </div>
+
+        </div>
+        <!-- Productos Cards -->
+        <!-- Tres Productos-->
+
+        <div class = "horus-container__products">
+            <!-- Producto 1 -->
+            <div class = "horus-container__products-card">
+                <img class = "horus-container__products-card-img" src = "https://via.placeholder.com/500" alt = "product1">
+                <h1 class = "horus-container__products-card-title">Producto 1</h1>
+                <p class = "horus-container__products-card-description">Descripcion del producto 1</p>
+                <p class = "horus-container__products-card-price">$100</p>
+                <button class = "horus-container__products-card-btn">Comprar</button>
+            </div>
+            <!-- Producto 2 -->
+            <div class = "horus-container__products-card">
+                <img class = "horus-container__products-card-img" src = "https://via.placeholder.com/500" alt = "product2">
+                <h1 class = "horus-container__products-card-title">Producto 2</h1>
+                <p class = "horus-container__products-card-description">Descripcion del producto 2</p>
+                <p class = "horus-container__products-card-price">$200</p>
+                <button class = "horus-container__products-card-btn">Comprar</button>
+            </div>
+            <!-- Producto 3 -->
+            <div class = "horus-container__products-card">
+                <img class = "horus-container__products-card-img" src = "https://via.placeholder.com/500" alt = "product3">
+                <h1 class = "horus-container__products-card-title">Producto 3</h1>
+                <p class = "horus-container__products-card-description">Descripcion del producto 3</p>
+                <p class = "horus-container__products-card-price">$300</p>
+                <button class = "horus-container__products-card-btn">Comprar</button>
+            </div>
+
+        </div>
+
+        <!-- Columnas de Informacion -->
+        <!-- Seis Columnas, imagen burbuja, descripcion -->
+        <div class = "horus-container__info">
+            <!-- Columna 1 -->
+            <div class = "horus-container__info-column">
+                <img class = "horus-container__info-column-img" src = "https://via.placeholder.com/500" alt = "info1">
+                <h1 class = "horus-container__info-column-title">Envios</h1>
+                <p class = "horus-container__info-column-description">Envios a todo el pais</p>
+            </div>
+            <!-- Columna 2 -->
+            <div class = "horus-container__info-column">
+                <img class = "horus-container__info-column-img" src = "https://via.placeholder.com/500" alt = "info2">
+                <h1 class = "horus-container__info-column-title">Garantia</h1>
+                <p class = "horus-container__info-column-description">Garantia de 30 dias</p>
+            </div>
+            <!-- Columna 3 -->
+            <div class = "horus-container__info-column">
+                <img class = "horus-container__info-column-img" src = "https://via.placeholder.com/500" alt = "info3">
+                <h1 class = "horus-container__info-column-title">Pago</h1>
+                <p class = "horus-container__info-column-description">Pago con tarjeta de credito</p>
+            </div>
+            <!-- Columna 4 -->
+            <div class = "horus-container__info-column">
+                <img class = "horus-container__info-column-img" src = "https://via.placeholder.com/500" alt = "info4">
+                <h1 class = "horus-container__info-column-title">Soporte</h1>
+                <p class = "horus-container__info-column-description">Soporte 24/7</p>
+            </div>
+            <!-- Columna 5 -->
+            <div class = "horus-container__info-column">
+                <img class = "horus-container__info-column-img" src = "https://via.placeholder.com/500" alt = "info5">
+                <h1 class = "horus-container__info-column-title">Seguridad</h1>
+                <p class = "horus-container__info-column-description">Pagos seguros</p>
+            </div>
+            <!-- Columna 6 -->
+            <div class = "horus-container__info-column">
+                <img class = "horus-container__info-column-img" src = "https://via.placeholder.com/500" alt = "info6">
+                <h1 class = "horus-container__info-column-title">Calidad</h1>
+                <p class = "horus-container__info-column-description">Productos de calidad</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <!-- Logo, redes sociales, informacion y mapa -->
+        <div class = "horus-container__footer">
+            <!-- Logo -->
+            <div class = "horus-container__footer-logo">
+                <img class = "horus-container__footer-logo-img" src = "./assets/img/logo.png" alt = "logo">
+            </div>
+            <!-- Redes Sociales -->
+            <div class = "horus-container__footer-social">
+                <a class = "horus-container__footer-social-link" href = "#"><img class = "horus-container__footer-social-link-img" src = "https://via.placeholder.com/500" alt = "facebook"></a>
+                <a class = "horus-container__footer-social-link" href = "#"><img class = "horus-container__footer-social-link-img" src = "https://via.placeholder.com/500" alt = "instagram"></a>
+                <a class = "horus-container__footer-social-link" href = "#"><img class = "horus-container__footer-social-link-img" src = "https://via.placeholder.com/500" alt = "twitter"></a>
+            </div>
+            <!-- Informacion -->
+            <div class = "horus-container__footer-info">
+                <p class = "horus-container__footer-info-text">HorusMart</p>
+                <p class = "horus-container__footer-info-text">Direccion: Calle 123</p>
+                <p class = "horus-container__footer-info-text">Telefono: 123456789</p>
+                <p class = "horus-container__footer-info-text">Email:
+                    <a class = "horus-container__footer-info-text-link" href = "#">
+                        <span class = "horus-container__footer-info-text-link-span">
+                    </a>
+                </p>
+            </div>
+            <!-- Mapa -->
+            <div class = "horus-container__footer-map">
+                <iframe class = "horus-container__footer-map-iframe" src = "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1803.7260992458423!2d51.546593723411604!3d25.289006947657377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1670624465855!5m2!1ses!2scl" width = "600" height = "450" style = "border:0;" allowfullscreen = "" loading = "lazy"></iframe>
+            </div>
+            
+
+
+        </div>
+    </div>
+</body>
+</html>

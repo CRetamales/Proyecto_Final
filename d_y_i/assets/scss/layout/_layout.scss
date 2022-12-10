@@ -1,0 +1,437 @@
+.horus-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    //---------Navbar 
+    .navbar{
+        display: flex;
+        top: 0;
+        position: fixed;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 3rem;
+        padding: 0.5rem;
+        //background-color: #0F110C;
+        //__list ul
+        &__list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            list-style: none;
+        }
+        //item li 
+        &__item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        //logo 
+        &__logo{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 1 0rem;
+            height: 100%;
+            
+
+        }
+        //link a
+        &__link{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+           
+        }
+        //Carrito de compras
+        &__cart{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+            position: relative;
+            &-img{
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            &-quantity{
+                position: absolute;
+                top: -0.5rem;
+                right: -0.5rem;
+                width: 1rem;
+                height: 1rem;
+                background-color: #C5A658;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.8rem;
+                font-weight: 700;
+            }
+        }
+        //Cuenta de usuario
+        &__account{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            //foto de perfil circular
+            &-img{
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+            }
+        }
+        //Search
+        &__search{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            //input
+            &-input{
+                width: 10rem;
+                height: 1.5rem;
+                border-radius: 10px;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                font-size: 1rem;
+                font-weight: 700;
+                color: #ffffff;
+                background-color: transparent;
+                &::placeholder{
+                    color: #ffffff;
+                }
+               
+            }
+            //lupa
+            &-img{
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+            
+        } 
+    }
+    //--------------------------
+    //---------Carrousel
+    &__carousel{
+        //Carrusel de imagenes
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        height: 41rem;
+        //Imagenes
+        &-img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        //Botones  btn
+        &-btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &--left{
+                left: 0;
+            }
+            &--right{
+                right: 0;
+            }
+            &-img{
+                width: 1rem;
+                height: 1rem;
+            }
+            &:hover{
+                background-color: #C5A658;
+            }
+        }
+        //Indicadores
+        &-indicator{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: row;
+            &-dot{
+                width: 5rem;
+                height: 0.5rem;
+                border-radius: 10px;
+                background-color: #ffffff;
+                margin: 0 0.2rem;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover{
+                    background-color: #C5A658;
+                }
+            }
+        }
+    }
+    //--------------------------
+    //---------Productos Cards
+    &__products{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        
+        //Tarjeta
+        &-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 20rem;
+            height: 30rem;
+            margin: 0 1rem;
+            background-color: #F7F7FF;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            //Imagen
+            &-img{
+                width: 100%;
+                height: 15rem;
+                object-fit: cover;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            //Titulo
+            &-title{
+                width: 100%;
+                height: 2rem;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+                
+            }
+            //Descripcion
+            &-description{
+                width: 100%;
+                height: 2rem;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+            }
+            //Precio
+            &-price{
+                width: 100%;
+                height: 2rem;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+            }
+            //Boton
+            &-btn{
+                //Centrar texto
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 90%;
+                height: 2rem;
+                padding: 0.5rem 1rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+                justify-content: center;
+                background-color: #C5A658;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover{
+                    background-color: #ffffff;
+                    color: #C5A658;
+                }
+            }
+        }
+    }
+    //--------------------------
+    //Columnas de informacion
+    &__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        height: 100%;
+        padding: 1rem;
+        color: #ffffff;
+        //Columna
+        &-column{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 20rem;
+            height: 30rem;
+            margin: 0 1rem;
+            
+            //Imagen
+            &-img{
+                width: 100%;
+                height: 10rem;
+                object-fit: cover;
+                //circle
+                border-radius: 50%;
+
+            }
+            //Titulo
+            &-title{
+                width: 100%;
+                height: 2rem;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+                
+            }
+            //Descripcion
+            &-description{
+                width: 100%;
+                height: 2rem;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+            }
+            
+        }
+    }
+    //--------------------------
+    //---------Footer
+    &__footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 25rem;
+        background-color: #0F110C;
+        color: #ffffff;
+        //Logo 
+        &-logo{
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+            &-img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        //Social
+        &-social{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            //Links <a>
+            &-link{
+                width: 100%;
+                height: 2rem;
+                padding: 2rem 1rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                &:hover{
+                    color: #C5A658;
+                }
+                img{
+                    width: 5rem;
+                    height: 5rem;
+                    margin: 0 0.5rem;
+                    border-radius: 50%;
+                }
+            }
+
+        }
+        //Info
+        &-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            //text
+            &-text{
+                width: 100%;
+                height: 2rem;
+                padding: 0.5rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+                &-link{
+                    width: 100%;
+                    height: 2rem;
+                    padding: 0.5rem;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        color: #C5A658;
+                    }
+                }
+            }
+
+        }
+        //Mapa
+        &-map{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            //iframe
+            &-iframe{
+                width: 100%;
+                height: 15rem;
+                border: 0;
+            }
+        }
+        
+        
+    }
+
+}
