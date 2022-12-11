@@ -6,13 +6,20 @@ const Menu = () => {
     //Funcion que retorna un string con el nombre del color 
     //dependiendo del la posicion del scroll
     const changeColor = () => {
-        console.log(window.scrollY)
-        return "red"
+        
+        //Se obtiene la clase del elemento con clase navbar
+        const element = document.getElementsByClassName('navbar')[0]
+        const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+        //Se edita el estilo del elemento
+        if(scrollPosition > 300){
+            element.style.backgroundColor = '#221D23'
+        }else{
+            element.style.backgroundColor = 'transparent'
+        }
     }
-
-    return (
-            
-            <Navbar  expand="lg" style={{backgroundColor: changeColor()}}>
+    function MenuLayout(){
+        const element =(
+            <Navbar  expand="lg" >
                 
                     <Navbar.Brand href="#home" className="navbar-brand">
                         <img src="./../src/assets/img/logo.png" alt="logo" width="30" height="30" className="d-inline-block align-text-top" />
@@ -51,8 +58,20 @@ const Menu = () => {
 
                 
             </Navbar>
-        
+        );
+        //Setear un intervalo cada vez que se mueva el scroll
+        window.onscroll = () => {
+            //Se llama a la funcion changeColor para que se actualice el color
+            changeColor()
+        }
+
+        return element
+
+    }
+    return (        
+        <MenuLayout />
     )
+
 }
 
 export default Menu
