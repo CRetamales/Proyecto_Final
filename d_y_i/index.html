@@ -3,7 +3,7 @@
     Una pagina que vende productos varios
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,76 +13,88 @@
     <link rel="icon" href="./assets/img/icon.png">
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
-    <div class = "horus-container">
-        <navbar class = "navbar">
-            <ul class = "navbar__list">
-                <!-- Logo -->
-                <li class = "navbar__item">
-                    <img class = "navbar__logo" src = "./assets/img/logo.png" alt = "logo">
-                </li>
-                <!-- Inicio -->
-                <li class = "navbar__item">
-                    <a class = "navbar__link" href = "#">Inicio</a>
-                </li>
-                <!-- Electronica -->
-                <li class = "navbar__item">
-                    <a class = "navbar__link" href = "#">Electronica</a>
-                </li>
-                <!-- Muebles -->
-                <li class = "navbar__item">
-                    <a class = "navbar__link" href = "#">Muebles</a>
-                </li>
-                <!-- Ropa -->
-                <li class = "navbar__item">
-                    <a class = "navbar__link" href = "#">Ropa</a>
-                </li>
-                <!-- Zapatos -->
-                <li class = "navbar__item">
-                    <a class = "navbar__link" href = "#">Zapatos</a>
-                </li>
-                <!-- Otros -->
-                <li class = "navbar__item">
-                    <a class = "navbar__link" href = "#">Otros</a>
-                </li>
-                <!-- Carrito Icono -->
-                <li class = "navbar__item">
-                    <div class = "navbar__cart">
-                        <img class = "navbar__cart-img" src = "./assets/img/cart.png" alt = "cart">
-                        <p class = "navbar__cart-quantity">0</p>
-                    </div>
 
-                </li>
-                <!-- Cuenta Icono -->
-                <li class = "navbar__item">
-                    <div class = "navbar__account">
-                        <img class = "navbar__account-img" src = "./assets/img/account.jpg" alt = "account">
-                        <p class = "navbar__account-name">Juan</p>
-                    </div>
-                </li>
-                <!-- Buscador -->
-                <li class = "navbar__item">
-                    <div class = "navbar__search">
-                        <input class = "navbar__search-input" type = "text" placeholder = "Buscar...">
-                        <!-- Icono de Buscador -->
-                        <img class = "navbar__search-img" src = "./assets/img/search.png" alt = "search">
-                    </div>
-                </li>
-            </ul>
-        </navbar>
+
+    <div class = "horus-container">
+        
+        <nav class="navbar navbar-expand-lg">
+            <!--Logo-->
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
+                HorusMart
+            </a>
+            <!--Boton de menu-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!--Icono de menu color blanco-->
+                <img src="./assets/img/menu.png" alt="menu" width="30" height="30" class="d-inline-block align-text-top">
+            </button>
+            <!--Menu-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href = "./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href = "./pages/category.html">Electronica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href = "./pages/category.html">Muebles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href = "./pages/category.html">Ropa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href = "./pages/category.html">Zapatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href = "./pages/category.html">Otros</a>
+                    </li>
+                    <!--Icono de carrito con cantidad-->
+                    <li class="nav-item">
+                        <a class="nav-link" href = "./pages/cart.html">
+                            <img src="./assets/img/cart.png" alt="cart" width="30" height="30" class="d-inline-block align-text-top">
+                            <span class="badge badge-pill badge-danger">0</span>
+                        </a>
+                    </li>
+                    <!-- Cuenta icono burbuja con nombre -->
+                    <li class="nav-item">
+                        <a class="nav-link" href = "./pages/user.html">
+                            <img src="./assets/img/account.jpg" alt="account" width="30" height="30" class="d-inline-block align-text-top" style="border-radius: 50%;">
+                            <span class="badge badge-pill badge-danger">Juan</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </nav>
+
+            
+        
+
         <!-- Imagen de fondo Carousel (Navbar Transparente) -->
         <div class = "horus-container__carousel">
             <!-- Tres imagenes -->
-            <img class = "horus-container__carousel-img" src = "https://via.placeholder.com/3000x1000" alt = "carousel1">
-            <img class = "horus-container__carousel-img" src = "https://via.placeholder.com/3000x1000" alt = "carousel2">
-            <img class = "horus-container__carousel-img" src = "https://via.placeholder.com/3000x1000" alt = "carousel3">
+            <img class = "horus-container__carousel-img" src = "https://via.placeholder.com/3001x1000" alt = "carousel1">
+            <img class = "horus-container__carousel-img" src = "https://via.placeholder.com/3002x1000" alt = "carousel2">
+            <img class = "horus-container__carousel-img" src = "https://via.placeholder.com/3004x1000" alt = "carousel3">
 
             <!-- Botones de Carousel -->
             <button class = "horus-container__carousel-btn horus-container__carousel-btn--left" onclick = "plusDivs(-1)">&#10094;</button>
             <button class = "horus-container__carousel-btn horus-container__carousel-btn--right" onclick = "plusDivs(1)">&#10095;</button>
-
+            <script>
+                
+            </script>
             <!-- Indicadores de Carousel -->
 
             <div class = "horus-container__carousel-indicator">
@@ -205,5 +217,7 @@
 
         </div>
     </div>
+    <script src = "./assets/js/page_index.js"></script>
+    <script src = "./assets/js/carrousel.js"></script>
 </body>
 </html>

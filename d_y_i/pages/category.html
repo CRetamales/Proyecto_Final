@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HorusMart - Category x</title>
+    <!-- Icono -->
+    <link rel="icon" href="./../assets/img/icon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./../assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="horus-container">
+    
+        <nav class="navbar navbar-expand-lg">
+            <!--Logo-->
+            <a class="navbar-brand" href="#">
+                <img src="./../assets/img/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
+                HorusMart
+            </a>
+            <!--Boton de menu-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!--Icono de menu color blanco-->
+                <img src="./../assets/img/menu.png" alt="menu" width="30" height="30" class="d-inline-block align-text-top">
+            </button>
+            <!--Menu-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Electronica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Muebles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Ropa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Zapatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./category.html">Otros</a>
+                    </li>
+                    <!--Icono de carrito con cantidad-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cart.html">
+                            <img src="./../assets/img/cart.png" alt="cart" width="30" height="30"
+                                class="d-inline-block align-text-top">
+                            <span class="badge badge-pill badge-danger">0</span>
+                        </a>
+                    </li>
+                    <!-- Cuenta icono burbuja con nombre -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./user.html">
+                            <img src="./../assets/img/account.jpg" alt="account" width="30" height="30"
+                                class="d-inline-block align-text-top" style="border-radius: 50%;">
+                            <span class="badge badge-pill badge-danger">Juan</span>
+                        </a>
+                    </li>
+    
+                </ul>
+    
+            </div>
+        </nav>
+        
+        <!--Header-->
+        <header class="horus-container__header">
+            <div class="horus-container__header-title">
+                <h1 class="horus-container__header-title-text">Categoria</h1>
+            </div>
+        </header>
+        
+        <!--Main-->
+        <!--Sección donde se muestran los productos a vender-->
+        <!-- Siendo un panel 2 columnas y 3 filas-->
+        <main class="horus-container__main">
+            <div class="horus-container__main-pagination">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Productos-->
+            <!--imagen, titulo,descripcion, precio, boton de agregar al carrito-->
+            <div class="horus-container__main-products">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/1000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                        <p class="card-text">Precio: $100</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/1000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                        <p class="card-text">Precio: $100</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/1000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                        <p class="card-text">Precio: $100</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/1000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 4</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                        <p class="card-text">Precio: $100</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/1000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 5</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                        <p class="card-text">Precio: $100</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/1000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 6</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                        <p class="card-text">Precio: $100</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/1000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 7</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                        <p class="card-text">Precio: $100</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/1000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 8</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                        <p class="card-text">Precio: $100</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://via.placeholder.com/1000" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto 9</h5>
+                        <p class="card-text">Descripcion del producto</p>
+                        <p class="card-text">Precio: $100</p>
+                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!--Contenedor de filtros-->
+            <div class="horus-container__main-filters">
+                <!--Filtro de precio-->
+                <div class="horus-container__main-filters-price">
+                    <h1 class="horus-container__main-filters-price-title">Filtros</h1>
+                    <h3 class="horus-container__main-filters-price-title">Precio</h3>
+                    <div class="horus-container__main-filters-price-range">
+                        <input type="range" class="custom-range" id="customRange1">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="horus-container__footer">
+            <!-- Logo -->
+            <div class="horus-container__footer-logo">
+                <img class="horus-container__footer-logo-img" src="./../assets/img/logo.png" alt="logo">
+            </div>
+            <!-- Redes Sociales -->
+            <div class="horus-container__footer-social">
+                <a class="horus-container__footer-social-link" href="#"><img class="horus-container__footer-social-link-img"
+                        src="https://via.placeholder.com/500" alt="facebook"></a>
+                <a class="horus-container__footer-social-link" href="#"><img class="horus-container__footer-social-link-img"
+                        src="https://via.placeholder.com/500" alt="instagram"></a>
+                <a class="horus-container__footer-social-link" href="#"><img class="horus-container__footer-social-link-img"
+                        src="https://via.placeholder.com/500" alt="twitter"></a>
+            </div>
+            <!-- Informacion -->
+            <div class="horus-container__footer-info">
+                <p class="horus-container__footer-info-text">HorusMart</p>
+                <p class="horus-container__footer-info-text">Direccion: Calle 123</p>
+                <p class="horus-container__footer-info-text">Telefono: 123456789</p>
+                <p class="horus-container__footer-info-text">Email:
+                    <a class="horus-container__footer-info-text-link" href="#">
+                        <span class="horus-container__footer-info-text-link-span">
+                    </a>
+                </p>
+            </div>
+            <!-- Mapa -->
+            <div class="horus-container__footer-map">
+                <iframe class="horus-container__footer-map-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1803.7260992458423!2d51.546593723411604!3d25.289006947657377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1670624465855!5m2!1ses!2scl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    
+<script src="./../assets/js/navbar.js"></script>
+</body>
+</html>
