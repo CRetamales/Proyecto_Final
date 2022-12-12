@@ -18,8 +18,8 @@ la aplicación en un servidor.
 
 - Para visualizar la aplicación en React, se ofrecen los siguientes links:
 
-    - 159.65.207.38:5173
-    - 134.122.58.72:5173
+    - http://159.65.207.38:5173/Proyecto_Final/
+    - http://134.122.58.72:5173/Proyecto_Final/
 
 - Para visualizar el código fuente, se debe descargar el repositorio y abrir las carpetas correspondientes al diseño e interfaz y a la aplicación en React.
 
