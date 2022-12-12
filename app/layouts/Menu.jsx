@@ -47,12 +47,12 @@ const Menu = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto ">
                             
-                            <Nav.Link href="/">Inicio</Nav.Link>
-                            <Nav.Link href="/Electronics/1">Electronica</Nav.Link>
-                            <Nav.Link href="/Furniture/1">Muebles</Nav.Link>
-                            <Nav.Link href="/Clothes/1">Ropa</Nav.Link>
-                            <Nav.Link href="/Shoes/1">Zapatos</Nav.Link>
-                            <Nav.Link href="/Others/1">Otros</Nav.Link>
+                            <Nav.Link href="/Proyecto_Final/">Inicio</Nav.Link>
+                            <Nav.Link href="/Proyecto_Final/Electronics/1">Electronica</Nav.Link>
+                            <Nav.Link href="/Proyecto_Final/Furniture/1">Muebles</Nav.Link>
+                            <Nav.Link href="/Proyecto_Final/Clothes/1">Ropa</Nav.Link>
+                            <Nav.Link href="/Proyecto_Final/Shoes/1">Zapatos</Nav.Link>
+                            <Nav.Link href="/Proyecto_Final/Others/1">Otros</Nav.Link>
                             
                             
                             <Nav.Link href="#link">

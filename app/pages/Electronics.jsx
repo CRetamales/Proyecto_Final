@@ -11,7 +11,7 @@ const path = window.location.pathname;
 
 console.log(path);
 //Tomar el id del producto
-const id = path.split('/')[2];
+const id = path.split('/')[3];
 
 const Electronics = () => {
     

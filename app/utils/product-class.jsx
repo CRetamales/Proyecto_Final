@@ -211,7 +211,7 @@ class Producto {
                 paginationLink.id = i;
                 
                 // -> /category/:id
-                paginationLink.href = "/"+category+"/"+i;
+                paginationLink.href = "/Proyecto_Final/"+category+"/"+i;
                 paginationLink.textContent = i;
                 //Se agregan los elementos a la paginacion
                 paginationLi.appendChild(paginationLink);
