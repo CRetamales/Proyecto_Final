@@ -9,12 +9,30 @@ const Menu = () => {
         
         //Se obtiene la clase del elemento con clase navbar
         const element = document.getElementsByClassName('navbar')[0]
+        const element_1 = document.getElementsByClassName('navbar-nav')[0];
+        var width = window.innerWidth;
         const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
         //Se edita el estilo del elemento
-        if(scrollPosition > 300){
-            element.style.backgroundColor = '#221D23'
-        }else{
-            element.style.backgroundColor = 'transparent'
+        if (width < 768){
+            if(scrollPosition > 150){
+                element.style.backgroundColor = '#221D23'
+                element_1.style.backgroundColor = '#221D23'
+            }else{
+                element.style.backgroundColor = 'transparent'
+                element_1.style.backgroundColor = '#221D23'
+                element_1.style.opacity = '0.8'
+            }
+        }
+        else{
+            if(scrollPosition > 300){
+                element.style.backgroundColor = '#221D23'
+                element_1.style.backgroundColor = '#221D23'
+            }else{
+                element.style.backgroundColor = 'transparent'
+                element_1.style.backgroundColor = 'transparent'
+                
+                
+            }
         }
     }
     function MenuLayout(){
@@ -29,12 +47,12 @@ const Menu = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto ">
                             
-                            <Nav.Link href="#home">Inicio</Nav.Link>
-                            <Nav.Link href="#link">Electronica</Nav.Link>
-                            <Nav.Link href="#link">Muebles</Nav.Link>
-                            <Nav.Link href="#link">Ropa</Nav.Link>
-                            <Nav.Link href="#link">Zapatos</Nav.Link>
-                            <Nav.Link href="#link">Otros</Nav.Link>
+                            <Nav.Link href="/">Inicio</Nav.Link>
+                            <Nav.Link href="/Electronics/1">Electronica</Nav.Link>
+                            <Nav.Link href="/Furniture/1">Muebles</Nav.Link>
+                            <Nav.Link href="/Clothes/1">Ropa</Nav.Link>
+                            <Nav.Link href="/Shoes/1">Zapatos</Nav.Link>
+                            <Nav.Link href="/Others/1">Otros</Nav.Link>
                             
                             
                             <Nav.Link href="#link">

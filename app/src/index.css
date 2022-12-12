@@ -195,6 +195,103 @@ body {
 .horus-container .navbar-nav .nav-link:hover {
   color: #C5A658;
 }
+.horus-container__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120.9%;
+  height: 25vh;
+  background-color: #0E34A0;
+}
+.horus-container__header-title {
+  width: 100%;
+  height: 2rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+.horus-container__header-title-text {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+.horus-container__main {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 5rem 100%;
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+  padding-bottom: 10rem;
+}
+.horus-container__main-pagination {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  background-color: #F7F7FF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+.horus-container__main-products {
+  grid-column: 2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-color: #F7F7FF;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+.horus-container__main-products .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: whitesmoke;
+  background: linear-gradient(90deg, #C5A658 0%, #C5A658 100%);
+  border-radius: 0.5rem;
+}
+.horus-container__main-products .card .btn {
+  background-color: #C5A658;
+  border: none;
+}
+.horus-container__main-products .card .btn:hover {
+  background-color: #C5A658;
+}
+.horus-container__main-filters {
+  grid-column: 1;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  background-color: #F7F7FF;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+.horus-container__main-filters h1, .horus-container__main-filters h3 {
+  width: 100%;
+  height: 2rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+}
 .horus-container__info {
   display: flex;
   flex-direction: row;

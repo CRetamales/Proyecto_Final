@@ -9,7 +9,7 @@ const CarrouselHorus = () => {
 
             <Carousel>
                 <Carousel.Item>
-                    <img className = "horus-container__carousel-img" src = "https://picsum.photos/id/113/3000/1000" alt = "carousel1"/>
+                    <img className = "horus-container__carousel-img" src = "https://picsum.photos/id/135/3000/1000" alt = "carousel1"/>
                     <Carousel.Caption>
                         <h3>Horus Mart</h3>
                         <p>La mejor tienda de productos varios.</p>

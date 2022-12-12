@@ -8,7 +8,7 @@ Se replica el siguiente codigo a react
 import CarrouselHorus from '../components/Carrousel-Horus'
 import ProductsPrincipalHorus from '../components/ProductsPrincipal-Horus'
 import InfoHorus from '../components/Info-Horus'
-import React from 'react'
+
 
 
 const Home = () => {
